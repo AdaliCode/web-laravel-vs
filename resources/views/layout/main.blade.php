@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=SUSE:wght@100..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Protest+Guerrilla&family=SUSE:wght@100..800&display=swap');
 
         /* // <uniquifier>: Use a unique and descriptive class name */
         /* // <weight>: Use a value from 100 to 800 */
@@ -24,12 +24,18 @@
             font-weight: 400;
             font-style: normal;
         }
+
+        .nerko-one-regular {
+            font-family: "Nerko One", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
     </style>
 </head>
 
 <body class="suse-400">
     @include('partials.navbar')
-    <div class="container py-4 protest-guerrilla-regular">
+    <div class="container py-4">
         @yield('container')
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
