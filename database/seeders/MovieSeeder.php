@@ -19,5 +19,7 @@ class MovieSeeder extends Seeder
         $movie->slug = Str::slug($movie->title);
         $movie->release = "2024/09/11";
         $movie->save();
+
+        Movie::factory()->count(9)->create();
     }
 }
