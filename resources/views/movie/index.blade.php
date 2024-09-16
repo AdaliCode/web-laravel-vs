@@ -5,7 +5,14 @@
         {{ $detailMovie->title }} - {{ \Carbon\Carbon::parse($detailMovie->release)->format('Y') }}
     </h1>
     <p>12. Jun, 2024 - South Korea - 93 Min</p>
-    <p>Action | Thriller</p>
+    <p>
+        @foreach ($detailMovie->genres as $item)
+            {{ $item->name }}
+            @if (!$loop->last)
+                |
+            @endif
+        @endforeach
+    </p>
     <p>Yuna is a famous YouTube influencer but always looks down on others. She is invited to a cosmetic brand launching
         party but things don’t go the way she had wanted. Tired and extremely stressed, she takes couple of shots and falls
         asleep after calling a designated driver. When Yuna opens her eyes, she realizes she’s trapped in the trunk of her

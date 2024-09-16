@@ -16,17 +16,17 @@ class GenreSeeder extends Seeder
     {
         $genre = new Genre();
         $genre->name = "Action";
-        $genre->id = Str::upper(Str::slug($genre->name));
+        $genre->id = Str::slug($genre->name);
         $genre->save();
 
         $genre = new Genre();
         $genre->name = "Thriller";
-        $genre->id = Str::upper(Str::slug($genre->name));
+        $genre->id = Str::slug($genre->name);
         $genre->save();
 
         $genre = new Genre();
         $genre->name = "Animation";
-        $genre->id = Str::upper(Str::slug($genre->name));
+        $genre->id = Str::slug($genre->name);
         $genre->save();
 
         $genre = new Genre();
