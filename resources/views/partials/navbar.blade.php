@@ -9,7 +9,8 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 @foreach (App\Models\Genre::all() as $item)
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">{{ $item->name }}</a>
+                        <a class="nav-link active" aria-current="page"
+                            href="/genre/{{ $item->id }}">{{ $item->name }}</a>
                     </li>
                 @endforeach
             </ul>
